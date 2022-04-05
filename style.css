@@ -11,6 +11,7 @@
   --elements-color-first: #2196f3;
   --elements-color-second: #f5f4fa;
   --elements-color-third: #eee;
+  --order-btn-add: #188ce8;
 }
 
 body {
@@ -45,7 +46,13 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 /* ===LOGO=== */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -84,6 +91,9 @@ body {
 .header-link:hover,
 .header-contacts:focus,
 .header-contacts:hover {
+  color: var(--color-add);
+}
+.current {
   color: var(--color-add);
 }
 
@@ -136,6 +146,11 @@ body {
   letter-spacing: 0.06em;
 }
 
+.order-btn:focus,
+.order-btn:hover {
+  background-color: var(--order-btn-add);
+}
+
 /* ===METHODS=== */
 .methods {
 }
@@ -161,12 +176,7 @@ body {
 /* ===OUR WORK=== */
 .work {
 }
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.work-title {
 }
 .work-list {
 }
@@ -176,6 +186,8 @@ body {
 /* ===OUR TEAM=== */
 .team {
   background-color: var(--bgc-third);
+}
+.team-title {
 }
 .team-list {
 }
@@ -199,9 +211,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* ----------------Page PORTFOLIO------------------ */
-
-/* ===MENU FILTER=== */
+/* ===PORTFOLIO=== */
 .filter {
 }
 .filter-menu {
@@ -218,8 +228,6 @@ body {
   background-color: var(--elements-color-first);
   color: var(--color-third);
 }
-
-/* ===PORTFOLIO=== */
 .portfolio {
 }
 .portfolio-list {
